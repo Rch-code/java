@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Functions {
+
+	public static void announceDeveloperTeaTime() {
+		System.out.println("Working....waiting for tea time!");
+		System.out.println("Type in a random word, press Enter and "
+				+ " team time will be announced: ");
+		Scanner Input = new Scanner(System.in);
+		Input.hasNext();
+		System.out.println("It's team time!");
+		
+	}
+	public static void main(String[] args) {
+		announceDeveloperTeaTime();
+
+	}
+
+}

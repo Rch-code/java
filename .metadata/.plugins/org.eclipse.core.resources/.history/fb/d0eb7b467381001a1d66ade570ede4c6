@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Functions2 {
+	
+	public static double calculateTotalMealPrice(double listedMealPrice, double tipRate, double taxRate) {
+		double tip= tipRate * listedMealPrice;
+		double tax = taxRate * listedMealPrice;
+		double result = Math.round(listedMealPrice + tip + tax);
+		System.out.println("The total cost is " + result);
+		return result;
+	}
+
+	public static void main(String[] args) {
+		Scanner Input = new Scanner(System.in);
+		System.out.print("What is the cost of your meal? ");
+		double listedMealPrice = Input.nextDouble();
+		System.out.print("What is the tip rate? ");
+		double tipRate = Input.nextDouble();
+		System.out.print("What is the tax rate? ");
+		double taxRate = Input.nextDouble();
+		double result;
+		
+		calculateTotalMealPrice(listedMealPrice, tipRate, taxRate);
+		System.out.println("That result again is: " + result);
+		
+
+	}
+
+}

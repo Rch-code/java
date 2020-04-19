@@ -1,0 +1,21 @@
+
+public class StudentGrades {
+
+	public static void main(String[] args) {
+		//Primitive Data Types
+		int StudentAge = 15;
+		double StudentGPA = 3.45;
+		char StudentFirstInitial = 'K';
+		char StudentLastInitial = 'H';
+		boolean PerfectAttendance = true;
+		
+		//Reference Data Types
+		String StudentFirstName = "Kayla";
+		String StudentLastName = "Hammon";
+
+		System.out.println(StudentAge);
+		System.out.println(StudentFirstInitial + StudentLastInitial);
+		System.out.println(StudentFirstName + ' ' + StudentLastName);
+	}
+
+}
